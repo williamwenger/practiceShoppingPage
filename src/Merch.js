@@ -3,7 +3,7 @@ import axios from 'axios';
 import Clothing from './Clothing';
 
 function Merch(){
-    const [merch, setMerch] = useState('');
+    const [merch, setMerch] = useState([]);
     //When merch is called, useEffect runs
     useEffect(function(){
         axios.get('https://fakestoreapi.com/products')

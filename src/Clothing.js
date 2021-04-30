@@ -8,9 +8,16 @@ function Clothing(props) {
     return(
         <>
         
-            <div class = "product-image-container-container">
+        <div class = "product-image-container-container">
                 <div class = "product-image-container">
                     <img src = {data.image} alt = "clothe" class = "product"></img>
+                    <div class = "middle">
+                        <div class = "text">
+                            <button>Buy now!</button>
+                        </div>
+                    </div>
+                    <p>${data.price}</p>
+                    <p>{data.title}</p>
                 </div>
             </div>      
         </>
