@@ -5,12 +5,13 @@ function Clothing(props) {
     useEffect(() => {
         console.log(data);
     }, []);
+
     return(
         <>
         
         <div class = "product-image-container-container">
                 <div class = "product-image-container">
-                    <img src = {data.image} alt = "clothe" class = "product"></img>
+                    <img src = {data.image} alt = "clothe" className = "product prodImg"></img>
                     <div class = "middle">
                         <div class = "text">
                             <button>Buy now!</button>

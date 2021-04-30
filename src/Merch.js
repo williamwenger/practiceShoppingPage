@@ -8,7 +8,6 @@ function Merch(){
     useEffect(function(){
         axios.get('https://fakestoreapi.com/products')
         .then(res => {
-            console.log(res);
             setMerch(res.data)
         })
         .catch(err => {
